@@ -1,0 +1,191 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  gap: 60px;
+
+}
+
+/* Left Side */
+.hero-left {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 66px;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.hero h1 span {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 32px;
+  width: 90%;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.hero-action {
+  margin-bottom: 20px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.hero-resume {
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero-resume:hover {
+  border-color: #b415ff;
+  color: #b415ff;
+}
+
+.hero-icons {
+  display: flex;
+  gap: 18px;
+  
+  bottom: 100px;
+}
+
+.hero-icons a {
+  font-size: 26px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.hero-icons a:hover {
+  color: #b415ff;
+}
+
+
+/* Right Side */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 1000px;
+  border-radius: 50%;
+  padding-right: 190px;
+  padding-top: 30px;
+  margin: -160px;
+
+}
+/* Glass container around astronaut */
+/* Glass container around astronaut */
+
+/* Bigger astronaut */
+.astronaut {
+  position: relative;
+  max-width: 540px;   /* was 320px → now bigger */
+  width: 80%;         /* scales with container */
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  filter: drop-shadow(0 12px 40px rgba(180, 21, 255, 0.4));
+  animation: floatY 8.5s ease-in-out infinite, slowTilt 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: 2;
+}
+
+/* Bigger glow */
+.astro-glow {
+  position: absolute;
+  width: 600px;   /* was 350px */
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(185, 35, 225, 0.25), transparent 70%);
+  filter: blur(60px);
+  animation: glowPulse 5.5s ease-in-out infinite;
+  z-index: 1;
+}
+/* Glass container around astronaut */
+
+
+/* Animations */
+@keyframes floatY {
+  0%   { transform: translateY(0) }
+  50%  { transform: translateY(-22px) }
+  100% { transform: translateY(0) }
+}
+@keyframes slowTilt {
+  0%   { rotate: 0deg; }
+  50%  { rotate: 3deg; }
+  100% { rotate: 0deg; }
+}
+@keyframes glowPulse {
+  0%   { opacity: 0.6; transform: scale(1); }
+  50%  { opacity: 1;   transform: scale(1.06); }
+  100% { opacity: 0.6; transform: scale(1); }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: justify;
+    padding: 30px 20px;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    text-align: justify;
+  }
+
+  .hero p {
+    font-size: 1rem;
+   text-align: justify;
+  }
+
+  .hero-action {
+    justify-content: center;
+  }
+
+  .hero-right img,
+  .astronaut {
+    max-width: 0%;
+    padding-right: 20px;
+  }
+}
