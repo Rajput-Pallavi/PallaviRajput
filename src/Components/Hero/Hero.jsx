@@ -23,13 +23,13 @@ const Hero = () => {
           <div className="hero-resume">Resume</div>
 
           <div className="hero-icons">
-            <a href="mailto:yourmail@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:rajputpallavi737@gmail.com" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-envelope"></i>
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/pallavi-rajput" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Rajput-Pallavi" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
